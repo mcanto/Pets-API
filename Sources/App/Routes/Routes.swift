@@ -19,7 +19,8 @@ extension Droplet {
         }
 
         get("description") { req in return req.description }
-        
-        try resource("posts", PostController.self)
+		
+		try resource("members", MemberController.self)
+		try resource("pets", PetController.self)
     }
 }
